@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Menu</title>
+
+  <link rel="stylesheet" type="text/css" href="libs/css/bootstrap.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+  integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <script src="libs/js/jquery.js"></script>
+  <script src="libs/js/bootstrap.js"></script>
+  <script src="js/Consultas/index.js"></script>
+  <script src="js/Seguridad/checkSeg.js"></script>
+  <meta charset="utf-8">
+
+
+</head>
+<body>
+  <script>window.addEventListener('load',session, true);</script>
+  <!----------------- Inicio de NAVBAR ---------------------->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" onclick="cerrarSesion();">Cerrar Sesion</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Fin de navbar-->
+
+<!-- Inicio de Tabla-->
+<div id="conTabla1">
+    <table>
+        <tr style="border: 1px solid black">
+            <th style="border: 1px solid black">Cliente</th>
+            <th style="border: 1px solid black">Nombre</th>
+            <th style="border: 1px solid black">Región</th>
+            <th style="border: 1px solid black">Teléfono de Contacto</th>
+            <th style="border: 1px solid black">Teléfono Celular</th>
+            <th style="border: 1px solid black">Opciones</th>
+          </tr>
+    </table>
+    <table id="lista" style="border: 1px solid black">
+        
+      </table>
+</div>
+<div id="botones">
+  <span id="pag"></span><button id="sig">Siguiente</button>
+</div>
+<!-- Modal para ver informacion detallada de cliente -->
+<div class="modal fade bd-example-modal" id="modal-evento">
+  <div class="modal-dialog">
+    <div class="modal-content">
+       <div class="modal-header">
+          <h4 class="modal-title" id="tituloEvento">Información Adicional</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button> 
+        </div>
+        <div class="modal-body">
+          
+        
+        <!-- Descripcion -->
+          <div class="col-sm-9">
+            <h5>Descripcion</h5>
+          </div>
+          <div class="container mr-2 ml-2">
+              <p>Descripcion dada por un agente
+               al llamar por telefono a un deudor de alguna compañia.
+              </p>
+          </div>
+        <!-- Nuevo Telefono -->
+        <div class="col-sm-9">
+          <h5>Nuevo Teléfono</h5>
+          </div>
+          <div class="container mr-2 ml-2">
+              <label>4457894520</label>
+          </div>
+        <!-- Fecha -->
+        <div class="col-sm-9 mt-2 mb-3">
+              <h5>Fecha</h5>
+          </div>
+          <div class="container mr-2 ml-2">
+              <input type="date" name="" value="2018-10-23">
+          </div>
+        <!-- Veces Corroboradas -->
+        <div class="col-sm-9 mt-2 mb-3">
+          <h5>Veces Corroboradas</h5>
+          </div>
+          <div class="container mr-2 ml-2">
+              <p>5</p>
+          </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary mx-auto" data-dismiss="modal">Cerrar</button>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
