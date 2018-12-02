@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Informacion Cliente</title>
+	<script src="libs/js/jquery.js"></script>
+  	<script src="libs/js/bootstrap.js"></script>
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  	<link rel="stylesheet" type="text/css" href="libs/css/bootstrap.css">
+  	<meta charset="utf-8">
+</head>
+<body>
+	  <!----------------- Inicio de NAVBAR ---------------------->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">DIS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Clientes<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Reportes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Salir</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--Card Principal-->
+<div class="container mt-5">
+<div class="card text-center">
+  <div class="card-header bg-dark">
+    <label class="fechaCard text-light"> 21-10-2018</label>
+    <h5 class="card-title0 text-light" id="nombreAgente">Nombre Agente</h5>
+  </div>
+  <div class="card-body">
+  	<div class="row ml-5 mr-5">
+    	<div class="col-sm">
+    		<div class="form-group">
+          		<h5>Nombre Cliente:</h5>
+          		<label id="nombreCliente">Hugo Hiram Aviles Villafuerte</label>        				
+        	</div>
+    	</div>
+    	<div class="col-sm">
+    		<div class="form-group">
+          		<h5>No. Cliente</h5>
+          		<label id="idCliente">258838</label>
+        	</div>
+    	</div>
+    </div>
+    <div class="row ml-5 mr-5">
+    	<div class="col-sm">
+     	<div class="form-group">
+         	<h5>Teléfono Cliente</h5>
+     		<label id="telCliente">445-123-5620</label>
+     	</div>
+    	</div>
+    	<div class="col-sm">
+     		<div class="form-group">
+         		<h5> Nuevo Teléfono</h5>
+     			<input type="text" name="" class="form-control input-sm">
+     		</div>
+    	</div>
+    </div>
+    <div class="row ml-5 mr-5">
+    	<div class="col-sm">
+    		<div class="form-group">
+          		<h5>Nuevas Referencias</h5>
+          		<textarea class="form-control vresize" id="descripcion" style="resize: vertical;"></textarea>
+        	</div>
+    	</div>
+    	<div class="col-sm">
+    		<div class="form-group">
+          		<h5>Referencias Antiguas</h5>
+          		<p>Aqui estarán referencias antiguas si existieran.</p>
+        	</div>
+    	</div>
+    </div>
+   </div>
+	<div class="row mb-3">
+		<div class="col-sm">
+			<button type="button" class="btn btn-success btn-lg ml-5 mr-5" data-toggle="modal" 
+  				data-target="#modal-largo">
+				Encontrado
+			</button>
+		</div>
+		<div class="col-sm">
+			<button type="button" class="btn btn-danger btn-lg ml-5 mr-5">
+				Guardar
+			</button>
+		</div>
+	</div>
+  <div class="card-footer text-muted">
+    Simple Footer
+  </div>
+</div>
+</div>	
+<!--Modal cliente Encontrado-->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" id="modal-largo" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+  		<div class="modal-header">
+      		<h4 class="modal-title" id="myModalLabel">Cliente</h4>
+      		<button type="button" class="close float-left" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    	</div>
+    	<div class="modal-body">
+    		<div class="row">
+    			<div class="col-sm">
+    				<div class="form-group">
+          				<h5>Nombre Cliente</h5>
+          				<label>Hugo Hiram Aviles Villafuerte</label>        				
+        			</div>
+    			</div>
+    			<div class="col-sm">
+    				<div class="form-group">
+          				<h5>No. Cliente</h5>
+          				<label>258838</label>
+        			</div>
+    			</div>
+    		</div>
+    		<hr>
+    		<div class="row">
+    			<div class="col-sm-4">
+    				<div class="form-group">
+    					<h5>Numero Contacto</h5>
+    					<label>4451398397</label>
+    				</div>
+    			</div>
+    			<div class="col-sm-4">
+    				<div class="form-group">
+    					<h5>Status</h5>
+    					<label>Ya no pertenece al dueño.</label>
+    				</div>
+    			</div>
+    			<div class="col-sm-4">
+    				<div class="form-group">
+    					<h5>Veces Corroborado</h5>
+    					<label>10</label>
+    				</div>   				
+    			</div>
+    		</div>
+    		<hr>
+    		<div class="row">
+    			<div class="col-sm-4">
+    				<div class="form-group">
+    					<h5>Deuda Actual</h5>
+    					<label>$250,000</label>
+    				</div>
+    			</div>
+    			<div class="col-sm-4">
+    				<div class="form-group">
+    					<h5>Fecha Ultimo Pago</h5>
+    					<label>25-10-2018</label>
+    				</div>
+    			</div>
+    			<div class="col-sm-4">
+    				<div class="form-group">
+    					<h5>Incremento de Intéres</h5>
+    					<label>10% - $25,000</label>
+    				</div>   				
+    			</div>
+    		</div>
+    		<hr>
+    		<div class="row">
+    			<div class="col-sm">
+    				<div class="form-group">
+          				<h5>Nueva Fecha de Pago</h5>
+          				<input type="date" name="" class="form-control input-sm">      				
+        			</div>
+    			</div>
+    			<div class="col-sm">
+    				<div class="form-group">
+          				<h5>Sucursal</h5>
+          				<select class="form-control" id="tipo">
+              				<option value="#" selected="selected">Coliseo</option>
+              				<option value="#">Tiendita</option>
+              				<option value="#">Parada</option>
+              				<option value="#">Region 1</option>
+              				<option value="#">Region Yotoh</option>
+            			</select>
+        			</div>
+    			</div>
+    		</div>
+    		<hr>
+    		<div class="form-group">
+          		<h5>Nuevo Plan de Pago</h5>
+          		<textarea class="form-control vresize" id="descripcion" style="resize: vertical;"></textarea>
+        	</div>
+        	<hr>
+        	<h5>Correo (Opcional)</h5>
+        	<div class="form-group">
+        		<input type="email" name="" class="form-control input-sm">
+        	</div>
+    	</div>
+    	<div class="modal-footer">
+        	<button type="button" class="btn btn-primary mx-auto" data-dismiss="modal" id="guardarnuevo">
+        	Actualizar
+        	</button>
+      	</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
