@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/functions.js"></script>
+    <title>pikachu666</title>
+</head>
+<body>
+<center>
+
+    <!-- HEADER -->
+    <div class="container container-full tabbar" style="position: relative">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <p style="margin-top: 3%;">
+                    <script>document.write(g());</script>
+                    pikachu666!
+                </p>
+            </div>
+        </div>
+    </div>
+</center>
+
+<!-- DATOS DEL AGENTE -->
+<div class="container container-full white-table">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <center><p class="big-face">&#128566;</p></center>
+            <!-- EDITAR AGENTE -->
+            <form action="#" class="form-group">
+                <label class="">Nombre de agente:</label>
+                <input type="text" class="form-control" value="Juan Pérez" disabled id="disabledButton" required>
+                <div class="btn personalButton" style="width: 15%; float: right;" onclick="allowEdit()">&#128393;</div>
+                <br><br>
+                <button class="btn personalButton hiddenButton" type="submit" id="hiddenButton" name="guardar">Guardar cambios</button>
+            </form>
+
+            <!-- ELIMINAR AGENTE -->
+            <form action="#" class="form-group">
+                <button class="btn deleteButton" type="submit" name="eliminar">Eliminar agente</button>
+            </form>
+            <br>
+            <!-- REPORTES -->
+            <label>Reportes:</label>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="col-1">#</th>
+                        <th class="col-7">Fecha</th>
+                        <th class="col-2"></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <center><th class="index">1</th></center>
+                        <th><a href="#" class="btn-link">Noviembre 27, 2018</a></th>
+                        <th><a href="#" class="btn-link">Imprimir</a></th>
+                    </tr>
+
+                    <tr>
+                        <center><th class="index">1</th></center>
+                        <th><a href="#" class="btn-link">Noviembre 28, 2018</a></th>
+                        <th><a href="#" class="btn-link">Imprimir</a></th>
+                    </tr>
+
+                    <tr>
+                        <center><th class="index">1</th></center>
+                        <th><a href="#" class="btn-link">Noviembre 29, 2018</a></th>
+                        <th><a href="#" class="btn-link">Imprimir</a></th>
+                    </tr>
+
+                    <tr>
+                        <center><th class="index">1</th></center>
+                        <th><a href="#" class="btn-link">Noviembre 30, 2018</a></th>
+                        <th><a href="#" class="btn-link">Imprimir</a></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/popper.min.js"></script>
+</body>
+</html>

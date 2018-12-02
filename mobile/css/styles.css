@@ -1,0 +1,96 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(10, 10, 10);
+}
+
+th {
+    color: white;
+}
+
+.tabbar {
+    background-color: rgb(47, 44, 102);
+    height: 50px;
+    color: white;
+    font-size: 18px;
+    text-align: left;
+}
+
+.container-full {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.white-table {
+    color: white;
+    margin-top: 5%;
+}
+
+.vulvo-active {
+    font-weight: bold;
+    color: rgb(220, 250, 220);
+    text-shadow: 0 0 30px #2fb10b;
+}
+
+.vulvo-inactive {
+    font-weight: bold;
+    color: rgb(255, 220, 220);
+    text-shadow: 0 0 30px #f00;
+}
+
+.index {
+    color: #88dbd4;
+}
+
+.personalCard {
+    margin-top: 40%;
+    width: 90%;
+    background-color: rgb(47, 44, 102);
+    opacity: 0.90;
+    border-radius: 10px;
+}
+
+.personalCard h2 {
+    color: white;
+}
+
+.form-group label {
+    color: white;
+}
+
+.form-group input {
+    opacity: 0.70;
+}
+
+.personalButton {
+    width: 100%;
+    background-color: rgb(0, 117, 211);
+    color: white;
+    font-weight: bold;
+}
+
+.deleteButton {
+    width: 100%;
+    background-color: rgb(145, 14, 18);
+    color: white;
+    font-weight: bold;
+}
+
+.big-face {
+    font-size: 70px;
+}
+
+.hiddenButton {
+    visibility: hidden;
+}
+
+/* Cols sizes */
+.col-1 {width: 10%;}
+.col-2 {width: 20%;}
+.col-3 {width: 30%;}
+.col-4 {width: 40%;}
+.col-5 {width: 50%;}
+.col-6 {width: 60%;}
+.col-7 {width: 70%;}
+.col-8 {width: 80%;}
+.col-9 {width: 90%;}
+.col-10{width:100%;}
